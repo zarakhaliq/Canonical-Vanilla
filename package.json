@@ -1,0 +1,19 @@
+{
+  "name": "canonical",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path node_modules src --output dist",
+    "watch-css": "yarn build-css && node-sass --watch src/style.scss --output dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "build-css": "^0.2.0",
+    "vanilla-framework": "^2.26.0"
+  }
+}
