@@ -1,0 +1,51 @@
+// Import the framework
+@import "node_modules/vanilla-framework/scss/vanilla";
+
+// Include all of Vanilla Framework
+@include vanilla;
+
+//Variables
+$title: #1593a7;
+
+.card__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px 15px;
+  padding: 60px;
+}
+.card {
+  margin: 20px 15px;
+  width: 100%;
+  border-top: solid 4px #85467b;
+}
+.main {
+  min-height: 400px;
+}
+.image {
+  object-fit: contain;
+  width: 100%;
+}
+
+.title {
+  color: $title;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+.author {
+  color: $title;
+}
+
+//Responsiveness
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .card__container {
+    grid-template-columns: 1fr;
+  }
+  .main {
+    min-height: 300px;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+}
